@@ -18,8 +18,8 @@ const MONCK_HEROI_ARUALIZAR = {
 }
 
 let context = {}
-describe('teste crud Postgres', () => {
-    before(async function(){
+describe('teste crud Postgres', async function() {
+    this.beforeAll(async function(){
         const connection = await Postgres.connect()
         const model = await Postgres.defineModel(connection, HeroiSchema)
         context = new Context(new Postgres(connection, model))
@@ -31,7 +31,7 @@ describe('teste crud Postgres', () => {
         assert.equal(result, true)
          
     })
-    it('cadastrar', async() =>{
+    it.only('cadastrar', async() =>{
         const result = await context.create(MONCK_HEROI_CADASTRAR)
         delete result.id
 
