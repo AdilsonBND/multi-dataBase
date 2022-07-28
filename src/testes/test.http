@@ -1,0 +1,11 @@
+POST http://localhost:5000/heroes 
+Content-Type: application/json
+
+{
+    "nome": "Formiga",
+    "poder": "tamanho"
+}
+
+###
+
+GET http://localhost:5000/heroes?nome=Homem
