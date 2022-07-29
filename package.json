@@ -2,7 +2,7 @@
   "name": "multi-db",
   "version": "1.0.0",
   "engines": {
-    "node": "12.22.12"
+    "node": "v12.22.12"
   },
   "description": "",
   "main": "index.js",
