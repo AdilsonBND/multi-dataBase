@@ -42,3 +42,10 @@ docker exec -it mongodb \
     --eval "db.getSiblingDB('heroes').createUser({user: 'adilson', pwd: 'senhasecreta', roles: [{role: 'readWrite', db: 'heroes'}]})"
 
 
+## heroku git:remote --app multidb-project
+## heroku apps:list
+## git remote -v
+
+## MONGODB_URL=mongodb://adilson:senhasecreta@localhost:27017/heroes?authSource=heroes
+## POSTGRES_URL=postgres://adilson:senhasecreta@localhost/heroes
+## nvm list

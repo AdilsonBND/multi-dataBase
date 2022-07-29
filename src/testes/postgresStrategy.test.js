@@ -31,7 +31,7 @@ describe('teste crud Postgres', async function() {
         assert.equal(result, true)
          
     })
-    it.only('cadastrar', async() =>{
+    it('cadastrar', async() =>{
         const result = await context.create(MONCK_HEROI_CADASTRAR)
         delete result.id
 

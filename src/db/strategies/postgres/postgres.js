@@ -60,12 +60,18 @@ class Postgres extends ICrud{
 
 
         const connection = new Sequelize(process.env.POSTGRES_URL, {
-            operatorsAliases: false,
-            logging: false,
-            quoteIdentifiers: false,
-            ssl: process.env.SSL_DB,
+        
+            
+          
             dialectOptions: {
-                ssl: process.env.SSL_DB.toString()
+                
+                ssl: {
+                    require: process.env.SSL_DB,
+                    rejectUnauthorized: false
+                
+                }
+               
+                
                 
             }
         })

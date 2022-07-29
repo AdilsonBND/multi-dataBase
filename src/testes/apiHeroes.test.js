@@ -1,7 +1,7 @@
 
 const assert = require('assert')
 const api = require('../api')
-const TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5pbmd1ZW0iLCJpZCI6MjAsImlhdCI6MTY1ODkxNjE1MH0.AgnicnDnAR0zKGvXl5OcCfym93Lh8V7qLu6FFJfsXzY'
+const TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5pbmd1ZW0iLCJpZCI6MSwiaWF0IjoxNjU5MDYwMDY2fQ.7jKooqyIvlZqEos4IoRu2neDosJCZRHXSOSJmDeVhQo'
 const headers = {
     Authorization: TOKEN
 }

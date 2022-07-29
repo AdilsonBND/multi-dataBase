@@ -14,7 +14,7 @@ const USER = {
 }
 const USER_DB = {
     username: USER.username.toLocaleLowerCase(),
-    password: '$2b$04$rS5m.6iXwtpQ9J74FCqx0uhDg/i6Yy2ZpVEA.TsXAirHwyc.nJD3W'
+    password: '$2b$04$s5sKR4ZwNP60X9LsWNMDqeMjDj5K1kT4nhWIhi6l5mpHSlyAQDXxi'
 }
 describe('Teste auth', async function () {
     this.beforeAll(async() =>{

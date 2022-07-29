@@ -6,7 +6,7 @@ const MongoDB = require('../db/strategies/mongodb/mongodb')
 let context = {}
 
 const MOCK_HEROI_CADASTRAR = {
-    nome: 'Huck',
+    nome: 'Zé Carioca',
     poder: 'Forca'
 }
 const MOCK_HEROI_ATUALIZAR = {

@@ -2,7 +2,7 @@ const assert = require('assert')
 const PasswordHelper = require ('../helpers/passwordHelper')
 
 const SENHA = 'qwe123@@@'
-const HASH = '$2b$04$eU0/AinjsmTu6uZhaB6SOelPc2sx/jZKXChr1b3Xyv5blSey5Eg2W'
+const HASH = '$2b$04$s5sKR4ZwNP60X9LsWNMDqeMjDj5K1kT4nhWIhi6l5mpHSlyAQDXxi'
 
 describe('User Helper test suite', function() {
     it('deve gerar hash a partir de uma senha', async () =>{ 
