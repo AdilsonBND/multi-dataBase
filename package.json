@@ -9,7 +9,8 @@
   "scripts": {
     "test": "mocha --timeout 100000 src/testes/*.js",
     "test:prod": "cross-env NODE_ENV=prod npm test",
-    "prod": "cross-env NODE_ENV=prod node src/api.js"
+    "prod": "cross-env NODE_ENV=prod node src/api.js",
+    "start": "pm2-runtime start ecosystem.config.js --env production"
   },
   "keywords": [],
   "author": "",
@@ -29,6 +30,7 @@
     "mongoose": "^6.4.4",
     "pg": "^8.7.3",
     "pg-hstore": "^2.3.4",
+    "pm2": "^5.2.0",
     "sequelize": "^4.38.0",
     "vision": "^5.4.3"
   },
