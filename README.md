@@ -59,3 +59,4 @@ docker exec -it mongodb \
 ## git push heroku master
 ## heroku logs
 
+## heroku config:set PM2_PUBLIC_KEY=pxlo4satbh1dzap PM2_SECRET_KEY=bvp0gbld6qwygfd

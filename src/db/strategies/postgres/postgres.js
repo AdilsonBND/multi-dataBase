@@ -58,10 +58,9 @@ class Postgres extends ICrud{
     static async connect(){
 
 
-
-        const connection = new Sequelize(process.env.POSTGRES_URL, {
         
-            
+        const connection = new Sequelize(process.env.POSTGRES_URL, {
+             
           
             dialectOptions: {
                 
@@ -70,11 +69,11 @@ class Postgres extends ICrud{
                     rejectUnauthorized: false
                 
                 }
-               
-                
+                           
                 
             }
         })
+     
 
         // const connection = new Sequelize(
         //     'heroes',
