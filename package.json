@@ -10,7 +10,7 @@
     "test": "mocha --timeout 100000 src/testes/*.js",
     "test:prod": "cross-env NODE_ENV=prod npm test",
     "prod": "cross-env NODE_ENV=prod node src/api.js",
-    "start": "pm2-runtime start ecosystem.config.js --env production"
+    "start": "pm2-runtime start ecosystem.config.js --env prod"
   },
   "keywords": [],
   "author": "",
