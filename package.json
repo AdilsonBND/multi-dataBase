@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "preinstall": "npm i -g pm2",
-    "postinstall": "npm run test:prod",
+    "postinstall": "cross-env NODE_ENV=prod npm test",
     "test": "nyc --reporter=html mocha --timeout  100000 --exit src/testes/*.js",
     "test:prod": "cross-env NODE_ENV=prod npm test",
     "prod": "cross-env NODE_ENV=prod pm2-runtime src/api.js"
