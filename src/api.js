@@ -26,6 +26,7 @@ const Inert = require('inert')
 const JWT_SECRET = process.env.JWT_KEY
 const HapiJwt = require('hapi-auth-jwt2')
 
+const UtilRoutes = require('./routes/utilRoutes')
 
 const app = new Hapi.Server({
     port: process.env.PORT,
@@ -91,7 +92,8 @@ async function main (){
     app.route([
     
         ...mapRoutes(new HeroRoute(context), HeroRoute.methods()),
-        ...mapRoutes(new AuthRoutes(JWT_SECRET, contextPostgres), AuthRoutes.methods())
+        ...mapRoutes(new AuthRoutes(JWT_SECRET, contextPostgres), AuthRoutes.methods()),
+        ...mapRoutes(new UtilRoutes(), UtilRoutes.methods())
     ])
     await app.start()
     console.log('rodando hapi na porta: ', app.info.port)
