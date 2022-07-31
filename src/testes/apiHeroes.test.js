@@ -166,4 +166,16 @@ describe('testes de api heros', async() => {
         assert.deepEqual(dados.message, 'removido')
 
     })
+    it('teste rota coverage', async () =>{
+        const result = await app.inject({
+            method: 'GET',
+            url: `/coverage`
+        })
+        
+    
+        const statusCode = result.statusCode
+        // console.log(result)
+        assert.deepEqual(statusCode, 302)
+    })
+
 })

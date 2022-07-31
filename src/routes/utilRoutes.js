@@ -12,7 +12,7 @@ class UtilRoutes extends BaseRoute {
             },
             handler: {
                 directory: {
-                    path: join('../../coverage'),
+                    path: join(__dirname, '../../coverage'),
                     redirectToSlash: true,
                     index: true
                 }
