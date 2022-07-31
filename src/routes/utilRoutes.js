@@ -5,7 +5,7 @@ const { join } = require('path')
 class UtilRoutes extends BaseRoute {
     coverage() {
         return{
-            path: '/coverage/index.html',
+            path: '/coverage/{param*}',
             method: 'GET',
             config: {
                 auth: false
