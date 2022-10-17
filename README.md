@@ -1,12 +1,10 @@
 # Projeto multi banco de dados:
 
-
+<h3> Projeto realizado durante o curso disponibilizado pela comunidade NodeBR.org. </h3>
 
 <div>
   <img align="right" src="https://github.com/AdilsonBND/multi-dataBase/blob/master/swaggerHeroku.png" width="55%"  />
 </div>
-
-<h3> Projeto realizado durante o curso disponibilizado pela comunidade NodeBR.org. </h3>
 
 Trata-se de um projeto no qual utiliza-se o postgres para persistência dos usuários e suas respectivas senhas 
 e utiliza-se o mongodb para persistência dos cadastros de heróis e seus poderes.
