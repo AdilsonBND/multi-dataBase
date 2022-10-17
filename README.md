@@ -6,7 +6,7 @@
   <img align="right" src="https://github.com/AdilsonBND/multi-dataBase/blob/master/swaggerHeroku.png" width="55%"  />
 </div>
 
-* Projeto realizado durante o curso disponibilizado pela comunidade NodeBE.org.
+<h2> Projeto realizado durante o curso disponibilizado pela comunidade NodeBE.org. </h2>
 
 Trata-se de um projeto no qual utiliza-se o postgres para persistência dos usuários e suas respectivas senhas 
 e utiliza-se o mongodb para persistência dos cadastros de heróis e seus poderes.
